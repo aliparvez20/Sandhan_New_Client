@@ -5,9 +5,9 @@ appmain.controller('HomeController', ['$scope', '$rootScope', '$controller', '$r
 
     
     $rootScope.menu = {
-        home: "active",
+        home: "active open",
         about: "",
-        blog: "",
+        service: "",
         contact: "",
     }
 

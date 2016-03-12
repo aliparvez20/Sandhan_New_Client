@@ -1,5 +1,5 @@
 ﻿<div ng-controller="HeaderController">
-
+    <link href="assets/css/ui.css" rel="stylesheet" />
 
 
 
@@ -40,10 +40,9 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-bars"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand portfolio" href="javascript:void(0);" ng-click="home()">
                         <!--<img id="logo-header" src="assets/img/logo1-default.png" alt="Logo">-->
-                        <!--<img id="logo-header" src="assets/img/SandhanFullLogo_2_206x78.png" alt="Sandhan">-->
-                        LOGO
+                        <img id="logo-header" src="assets/img/SandhanFullLogoTransparent.png" alt="Sandhan">
                     </a>
                 </div>
 
@@ -51,7 +50,7 @@
                 <div class="collapse navbar-collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
                         <!-- Home -->
-                        <li class="dropdown1 " ng-class="menu.home">
+                        <li class="dropdown1" ng-class="menu.home">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ng-click="home()">
                                 Home
                             </a>
@@ -66,7 +65,7 @@
                         </li>
                         <!-- End Pages -->
                         <!-- Features -->
-                        <li class="dropdown1 mega-menu-fullwidth">
+                        <li class="dropdown1" ng-class="menu.service">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" ng-click="service()">
                                 Service
                             </a>
@@ -74,20 +73,20 @@
                         </li>
                         <!-- End Features -->
                         <!-- Portfolio -->
-                        <li class="dropdown1 mega-menu-fullwidth">
+                        <!--<li class="dropdown1 mega-menu-fullwidth">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                 Portfolio
                             </a>
 
-                        </li>
+                        </li>-->
                         <!-- Ens Portfolio -->
                         <!-- Blog -->
-                        <li class="dropdown1" ng-class="menu.blog">
+                        <!--<li class="dropdown1" ng-class="menu.blog">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
                                 Blog
                             </a>
 
-                        </li>
+                        </li>-->
                         <!-- End Blog -->
                         <!-- Contacts -->
                         <li class="dropdown1" ng-class="menu.contact">

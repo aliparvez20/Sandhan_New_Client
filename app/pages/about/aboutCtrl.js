@@ -4,8 +4,8 @@ appmain.controller('AboutController', ['$scope', '$rootScope', function ($scope,
 
     $rootScope.menu = {
         home: "",
-        about: "active",
-        blog: "",
+        about: "active open",
+        service: "",
         contact: "",
     }
     

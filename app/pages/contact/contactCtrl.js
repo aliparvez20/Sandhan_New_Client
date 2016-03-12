@@ -6,11 +6,9 @@ appmain.controller('ContactController', ['$scope', '$rootScope', '$http', 'messa
     $rootScope.menu = {
         home: "",
         about: "",
-        blog: "",
-        contact: "active",
+        service: "",
+        contact: "active open",
     }
-    
-    $scope.google = "XXXXX";
 
     $scope.submitMessage = function () {
         //$scope.message.messageDate = new Date();
