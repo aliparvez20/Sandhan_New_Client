@@ -1,0 +1,213 @@
+﻿<div>
+
+    <!--CONTACT-->
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/flexslider/flexslider.css">
+
+    <!-- CSS Page Style -->
+    <link rel="stylesheet" href="assets/css/pages/page_contact.css">
+    <!--CONTACT-->
+    <!-- Google Map -->
+    <div id="map" class="map">
+    </div><!---/map-->
+    <!-- End Google Map -->
+    <!--=== Content Part ===-->
+    <div class="container content">
+        <div class="row margin-bottom-30">
+            <div class="col-md-9 mb-margin-bottom-30">
+                <div class="headline"><h2>Contact Us</h2></div>
+                <p>For information on SANDHAN MANPOWER & TRAINING SOLUTION, or to provide feedback about this website, please contact us today. We look forward to hearing from you, and THANK YOU in advance for your interest in SANDHAN !</p><br />
+                <form novalidate name="newMessageFrom">
+
+                    <label for="name">Name{{google}}</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-7 col-md-offset-0">
+                            <input type="text" class="form-control" name="name" ng-model="conCtrl.message.messageName" required ng-minlength="5">
+                            <span ng-show="newMessageFrom.name.$dirty && newMessageFrom.name.$error.required" class="text-warning">Name is required</span>
+                            <span ng-show="newMessageFrom.name.$dirty && newMessageFrom.name.$error.minlength" class="text-warning">Name should be atleast 5 characters</span>
+                        </div>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-7 col-md-offset-0">
+                            <input type="email" class="form-control" name="email" id="email" ng-model="conCtrl.message.messageEmail" required>
+                            <span ng-show="newMessageFrom.email.$dirty && newMessageFrom.email.$error.required" class="text-warning">Email is required</span>
+                            <span ng-show="newMessageFrom.email.$dirty && newMessageFrom.email.$error.email" class="text-warning">Invalid Email</span>
+                        </div>
+                    </div>
+
+                    <label for="message">Message</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-11 col-md-offset-0">
+                            <textarea rows="8" class="form-control" name="message" ng-model="conCtrl.message.messageBody" required ng-trim="false" ng-minlength="100"></textarea>
+                            <span ng-show="newMessageFrom.message.$dirty && newMessageFrom.message.$error.required" class="text-warning">Text is required</span>
+                            <span ng-show="newMessageFrom.message.$dirty && newMessageFrom.message.$error.minlength" class="text-warning">Text should be atleast 100 characters</span>
+                            <span style="display:inline-block; float:right; color:red" ng-show="newMessageFrom.message.$dirty && newMessageFrom.message.$error.minlength">too short!</span>
+                        </div>
+                    </div>
+
+                    <p><button type="submit" class="btn-u" ng-click="submitMessage()" ng-hide="newMessageFrom.$invalid">Send Message</button></p>
+                </form>
+            </div><!--/col-md-9-->
+
+            <div class="col-md-3">
+                <!-- Contacts -->
+                <div class="headline"><h2>Contacts</h2></div>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><a href="#"><i class="fa fa-home"></i>58/C Allimuddin Street, Kolkata-700016, West Bengal</a></li>
+                    <li><a href="#"><i class="fa fa-envelope"></i>sandhanmanpower07@gmail.com</a></li>
+                    <li><a href="#"><i class="fa fa-phone"></i>+91-8282946683 | +91-9038150061</a></li>
+                    <li><a href="#"><i class="fa fa-globe"></i>http://www.sandhan.co</a></li>
+                </ul>
+
+                <!-- Business Hours -->
+                <div class="headline"><h2>Business Hours</h2></div>
+                <ul class="list-unstyled margin-bottom-30">
+                    <li><strong>Monday-Friday:</strong> 9am to 6pm</li>
+                    <li><strong>Saturday:</strong> 11am to 3pm</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>
+
+                <!-- Why we are? -->
+                <div class="headline"><h2>Why we are?</h2></div>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-check color-green"></i> Odio dignissimos ducimus</li>
+                    <li><i class="fa fa-check color-green"></i> Blanditiis praesentium volup</li>
+                    <li><i class="fa fa-check color-green"></i> Eos et accusamus</li>
+                </ul>
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+        <!-- Our Clients -->
+        <div id="clients-flexslider" class="flexslider home clients">
+            <div class="headline"><h2>Our Clients</h2></div>
+            <ul class="slides">
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/hp_grey.png" alt="" />
+                        <img src="assets/img/clients/hp.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/igneus_grey.png" alt="" />
+                        <img src="assets/img/clients/igneus.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/vadafone_grey.png" alt="" />
+                        <img src="assets/img/clients/vadafone.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/walmart_grey.png" alt="" />
+                        <img src="assets/img/clients/walmart.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/shell_grey.png" alt="" />
+                        <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/natural_grey.png" alt="" />
+                        <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/aztec_grey.png" alt="" />
+                        <img src="assets/img/clients/aztec.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/gamescast_grey.png" alt="" />
+                        <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/cisco_grey.png" alt="" />
+                        <img src="assets/img/clients/cisco.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/everyday_grey.png" alt="" />
+                        <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/cocacola_grey.png" alt="" />
+                        <img src="assets/img/clients/cocacola.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/spinworkx_grey.png" alt="" />
+                        <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/shell_grey.png" alt="" />
+                        <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/natural_grey.png" alt="" />
+                        <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/gamescast_grey.png" alt="" />
+                        <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/everyday_grey.png" alt="" />
+                        <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/spinworkx_grey.png" alt="" />
+                        <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </div><!--/flexslider-->
+        <!-- End Our Clients -->
+    </div><!--/container-->
+    <!--=== End Content Part ===-->
+    <!--CONTACT-->
+    <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
+    <script type="text/javascript" src="assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+    <!-- JS Customization -->
+    <!-- JS Page Level -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/pages/page_contacts.js"></script>
+    <!--CONTACT-->
+
+    <script type="text/javascript">
+        App.init();
+        App.initSliders();
+        ContactPage.initMap();
+    </script>
+
+
+
+</div>
+
