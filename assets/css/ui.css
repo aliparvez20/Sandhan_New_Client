@@ -1,43 +1,9 @@
-﻿@media (min-width:20em) {
-    .portfolio img {
-        /*max-width: 240px;
-        max-height: 240px;*/
-          max-width: 110px;
-          max-height: 110px;
+﻿.portfolio {
+        width: 196px; 
+        padding:0;
+        margin:0;
+        display:inline-block;
     }
-}
-
-@media (min-width:30.063em) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
     .portfolio img {
-        max-width: 110px;
-          max-height: 110px;
+        width:100%;
     }
-}
-
-@media (min-width:40.063em) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-    .portfolio img {
-        max-width: 110px;
-          max-height: 110px;
-    }
-}
-
-@media (min-width:60.063em) { /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .portfolio img {
-        max-width: 110px;
-          max-height: 110px;
-    }
-}
-
-@media (min-width:64.063em) { /* big landscape tablets, laptops, and desktops */
-    .portfolio img {
-        max-width: 110px;
-          max-height: 110px;
-    }
-}
-
-@media (min-width:80.063em) { /* hi-res laptops and desktops */
-    .portfolio img {
-        max-width: 110px;
-          max-height: 110px;
-    }
-}
